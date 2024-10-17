@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 n a text file, there is a single character H.
 Your text editor can execute only two operations in this file:
