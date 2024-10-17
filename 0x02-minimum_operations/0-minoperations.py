@@ -27,18 +27,18 @@ def minOperations(n: int) -> int:
     """
     div_num = 2
     condition = True
-    num_of_op = 0
+    num_of_operations = 0
 
     if n <= 1:
         return 0
 
     while condition:
         if ((n % div_num == 0) and (n != 1)):
-            num_of_op += div_num
+            num_of_operations += div_num
             n //= div_num
         elif ((n % div_num != 0) and (n != 1)):
             div_num += 1
         else:
             condition = False
 
-    return num_of_op
+    return num_of_operations
