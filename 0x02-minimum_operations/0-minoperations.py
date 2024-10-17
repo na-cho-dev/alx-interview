@@ -20,7 +20,7 @@ Number of operations: 6
 """
 
 
-def minOperations(n):
+def minOperations(n: int) -> int:
     """
     Calculates the fewest number of operations needed
     to result in exactly n H characters in the file.
