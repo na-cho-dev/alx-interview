@@ -20,7 +20,7 @@ Number of operations: 6
 """
 
 
-def minOperations(n: int) -> int:
+def minOperations(n):
     """
     Calculates the fewest number of operations needed
     to result in exactly n H characters in the file.
@@ -28,6 +28,9 @@ def minOperations(n: int) -> int:
     div_num = 2
     condition = True
     num_of_op = 0
+
+    if n <= 1:
+        return 0
 
     while condition:
         if ((n % div_num == 0) and (n != 1)):
