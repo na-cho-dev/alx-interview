@@ -30,7 +30,6 @@ const requestsAPI = async (url) => {
     if (body instanceof Array) {
       for (const people of body) {
         await requestsAPI(people);
-        console.log(people);
       }
     } else {
       console.log(body);
