@@ -39,7 +39,7 @@ const requestsAPI = async (url) => {
   }
 };
 
-const printsSWChar = () => {
+(function printStarWarsCharacter () {
   const args = process.argv;
 
   if (args.length !== 3) {
@@ -50,6 +50,4 @@ const printsSWChar = () => {
   const movieID = args[2];
 
   requestsAPI(`https://swapi-api.alx-tools.com/api/films/${movieID}`);
-};
-
-printsSWChar();
+})();
